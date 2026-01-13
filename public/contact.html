@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact &amp; Inquiry | Abhi Info Tech Pvt. Ltd.</title>
+    <meta
+      name="description"
+      content="Contact Abhi Info Tech Pvt. Ltd. to discuss your web, mobile, or cloud software project and get a tailored proposal."
+    />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2563EB",
+              primaryDark: "#1E3A8A",
+              primaryLight: "#EFF6FF",
+              accent: "#38BDF8",
+              grayBg: "#F3F4F6",
+              grayText: "#9CA3AF",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-primaryLight text-slate-900">
+    <!-- Shared Header -->
+    <div id="site-header"></div>
+
+    <main class="pt-20">
+      <!-- Page Hero -->
+      <section class="bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+          <p class="text-xs font-semibold tracking-wide text-primary uppercase">
+            Contact
+          </p>
+          <div
+            class="mt-3 flex flex-col md:flex-row md:items-end md:justify-between gap-4"
+          >
+            <div>
+              <h1 class="text-2xl sm:text-3xl md:text-4xl font-semibold">
+                Let’s talk about your
+                <span class="text-primary">next software project.</span>
+              </h1>
+              <p class="mt-3 text-sm sm:text-base text-slate-600 max-w-xl">
+                Use this form to share your idea, existing product, or
+                challenges. We’ll get back to you with next steps or a short
+                call slot.
+              </p>
+            </div>
+            <div
+              class="rounded-2xl bg-primaryLight px-4 py-3 border border-primary/20 text-xs sm:text-sm text-slate-700 max-w-xs"
+            >
+              <p class="font-semibold text-primaryDark mb-1">
+                You can change this later.
+              </p>
+              <p>
+                Replace this box with your office address, phone number, or any
+                contact detail you want to highlight.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact / Inquiry Form -->
+      <section class="bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 sm:pb-16">
+          <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+            <div>
+              <h2
+                class="text-sm font-semibold tracking-wide text-primary uppercase mb-2"
+              >
+                Inquiry
+              </h2>
+              <p class="text-2xl sm:text-3xl font-semibold text-slate-900 mb-4">
+                Share a few details to get started.
+              </p>
+              <ul class="space-y-3 text-xs sm:text-sm text-slate-700 mb-6">
+                <li class="flex items-start gap-3">
+                  <span
+                    class="mt-1 h-6 w-6 rounded-full bg-primary/10 text-primary flex items-center justify-center text-xs"
+                    >1</span
+                  >
+                  <span
+                    >Describe your goals, timelines, and any existing systems or
+                    technology.</span
+                  >
+                </li>
+                <li class="flex items-start gap-3">
+                  <span
+                    class="mt-1 h-6 w-6 rounded-full bg-primary/10 text-primary flex items-center justify-center text-xs"
+                    >2</span
+                  >
+                  <span
+                    >We’ll review and respond with clarifying questions or a
+                    recommended approach.</span
+                  >
+                </li>
+                <li class="flex items-start gap-3">
+                  <span
+                    class="mt-1 h-6 w-6 rounded-full bg-primary/10 text-primary flex items-center justify-center text-xs"
+                    >3</span
+                  >
+                  <span
+                    >Once aligned, we’ll propose timelines, team structure, and
+                    next steps.</span
+                  >
+                </li>
+              </ul>
+
+              <div
+                class="rounded-2xl bg-grayBg p-4 border border-slate-200 text-xs sm:text-sm text-slate-700"
+              >
+                <p class="font-semibold mb-1">Prefer email?</p>
+                <p>
+                  You can also reach us directly at
+                  <span class="font-medium text-primary"
+                    >contact@abhiinfotech.com</span
+                  >
+                  (example).
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="rounded-2xl bg-grayBg p-5 sm:p-6 border border-slate-200"
+            >
+              <form id="contact-form" class="space-y-4">
+                <div>
+                  <label
+                    for="name"
+                    class="block text-xs font-medium text-slate-700 mb-1"
+                    >Name *</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    class="block w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 shadow-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none"
+                    placeholder="Enter your full name"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="email"
+                    class="block text-xs font-medium text-slate-700 mb-1"
+                    >Email *</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    class="block w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 shadow-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none"
+                    placeholder="you@example.com"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="phone"
+                    class="block text-xs font-medium text-slate-700 mb-1"
+                    >Phone</label
+                  >
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    class="block w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 shadow-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none"
+                    placeholder="+91-XXXXXXXXXX"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="message"
+                    class="block text-xs font-medium text-slate-700 mb-1"
+                    >Project details *</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    required
+                    class="block w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 shadow-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none resize-y"
+                    placeholder="Share a brief about your idea, timelines, and expectations."
+                  ></textarea>
+                </div>
+
+                <div id="form-status" class="text-xs hidden"></div>
+
+                <button
+                  type="submit"
+                  id="submit-button"
+                  class="inline-flex w-full items-center justify-center rounded-full bg-primary text-white px-6 py-2.5 text-sm font-medium shadow-md shadow-primary/40 hover:bg-primaryDark focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-grayBg disabled:cursor-not-allowed disabled:bg-slate-400 disabled:shadow-none transition-all"
+                >
+                  Send Inquiry
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Shared Footer -->
+    <div id="site-footer"></div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", async () => {
+        const headerContainer = document.getElementById("site-header");
+        const footerContainer = document.getElementById("site-footer");
+
+        try {
+          if (headerContainer) {
+            const resHeader = await fetch("partials/header.html");
+            headerContainer.innerHTML = await resHeader.text();
+
+            // Setup mobile menu functionality after header is loaded
+            setupMobileMenu();
+          }
+          if (footerContainer) {
+            const resFooter = await fetch("partials/footer.html");
+            footerContainer.innerHTML = await resFooter.text();
+          }
+        } catch (e) {
+          console.error("Failed to load shared layout:", e);
+        }
+
+        // Function to setup mobile menu
+        function setupMobileMenu() {
+          const mobileMenuButton =
+            document.getElementById("mobile-menu-button");
+          const mobileMenu = document.getElementById("mobile-menu");
+          const iconOpen = document.getElementById("mobile-menu-icon-open");
+          const iconClose = document.getElementById("mobile-menu-icon-close");
+          const mobileNavLinks = document.querySelectorAll(".mobile-nav-link");
+
+          if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener("click", () => {
+              const isHidden = mobileMenu.classList.contains("hidden");
+
+              if (isHidden) {
+                // Open menu
+                mobileMenu.classList.remove("hidden");
+                if (iconOpen) iconOpen.classList.add("hidden");
+                if (iconClose) iconClose.classList.remove("hidden");
+                mobileMenuButton.setAttribute("aria-expanded", "true");
+              } else {
+                // Close menu
+                mobileMenu.classList.add("hidden");
+                if (iconOpen) iconOpen.classList.remove("hidden");
+                if (iconClose) iconClose.classList.add("hidden");
+                mobileMenuButton.setAttribute("aria-expanded", "false");
+              }
+            });
+
+            // Close menu when clicking on navigation links
+            mobileNavLinks.forEach((link) => {
+              link.addEventListener("click", () => {
+                mobileMenu.classList.add("hidden");
+                if (iconOpen) iconOpen.classList.remove("hidden");
+                if (iconClose) iconClose.classList.add("hidden");
+                mobileMenuButton.setAttribute("aria-expanded", "false");
+              });
+            });
+          }
+        }
+
+        // Active nav link
+        setTimeout(() => {
+          document.querySelectorAll('[data-nav="contact"]').forEach((el) => {
+            el.classList.remove("text-slate-700");
+            el.classList.add("text-primary");
+          });
+        }, 100);
+
+        // Footer year
+        const yearSpan = document.getElementById("year");
+        if (yearSpan) {
+          yearSpan.textContent = new Date().getFullYear();
+        }
+
+        // Contact form submission
+        const contactForm = document.getElementById("contact-form");
+        const formStatus = document.getElementById("form-status");
+        const submitButton = document.getElementById("submit-button");
+
+        if (contactForm) {
+          contactForm.addEventListener("submit", async (event) => {
+            event.preventDefault();
+
+            if (!contactForm.checkValidity()) {
+              contactForm.reportValidity();
+              return;
+            }
+
+            const formData = new FormData(contactForm);
+            const payload = {
+              name: formData.get("name"),
+              email: formData.get("email"),
+              phone: formData.get("phone"),
+              message: formData.get("message"),
+            };
+
+            if (formStatus) {
+              formStatus.classList.remove(
+                "hidden",
+                "text-emerald-600",
+                "text-red-600"
+              );
+              formStatus.classList.add("text-slate-600");
+              formStatus.textContent = "Sending your inquiry...";
+            }
+
+            if (submitButton) {
+              submitButton.disabled = true;
+              submitButton.textContent = "Sending...";
+            }
+
+            try {
+              const response = await fetch("/api/contact", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify(payload),
+              });
+
+              const data = await response.json();
+
+              if (response.ok && data.success) {
+                if (formStatus) {
+                  formStatus.textContent =
+                    data.message || "Your inquiry has been sent successfully.";
+                  formStatus.classList.remove("text-slate-600", "text-red-600");
+                  formStatus.classList.add("text-emerald-600");
+                }
+                contactForm.reset();
+              } else {
+                throw new Error(
+                  data.error || "Unable to send your inquiry at the moment."
+                );
+              }
+            } catch (error) {
+              if (formStatus) {
+                formStatus.textContent = error.message;
+                formStatus.classList.remove(
+                  "text-slate-600",
+                  "text-emerald-600"
+                );
+                formStatus.classList.add("text-red-600");
+              }
+            } finally {
+              if (submitButton) {
+                submitButton.disabled = false;
+                submitButton.textContent = "Send Inquiry";
+              }
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
